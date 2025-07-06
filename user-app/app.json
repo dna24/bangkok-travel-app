@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "myapp",
+    "slug": "myapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDfrZyGzA2lmf6XXhn2i3TzdE1eCQz6PaU"
+        }
+      },
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourapp.bundle",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show the map",
+        "NSLocationAlwaysUsageDescription": "We need your location to track your journey",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "We need your location to track your journey both when app is in use or background"
+      }
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDfrZyGzA2lmf6XXhn2i3TzdE1eCQz6PaU"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.myapp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "@rnmapbox/maps",
+        {
+          "RNMapboxMapsImpl": "mapbox",
+          "accessToken": "sk.eyJ1IjoiZGFueXIyNCIsImEiOiJjbTlxdG9hNGExcDNhMm5xdWhnMm5qOHVhIn0.JS64h3dW4d07Q4h6sM26QQ"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "360eeddd-7b16-45ea-8bbc-362dbb2f3f4e"
+      }
+    }
+  }
+}
