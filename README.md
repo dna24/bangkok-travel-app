@@ -9,10 +9,10 @@ This project includes:
 
 ---
 
-## 🔧 Technologies Used
+## 🔧 Technologies
 
 ### 🖥️ Backend (API)
-- Django & Django REST Framework
+- Django
 - MySQL
 - JWT Authentication
 - Django CORS & Media support
