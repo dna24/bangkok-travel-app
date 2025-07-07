@@ -20,13 +20,11 @@ This project includes:
 ### 📱 Frontend (User App)
 - React Native
 - Google Maps & Directions API
-- Axios
 - AsyncStorage
 
 ### 🖥️ Frontend (Admin Dashboard)
 - Vue.js
 - Vue Router
-- Axios
 - Vuetify
 
 ---
